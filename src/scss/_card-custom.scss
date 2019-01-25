@@ -1,0 +1,47 @@
+.card {
+  margin-bottom: 2rem;
+  height: 437px;
+  .nav {
+    flex-direction: column;
+    @include media-breakpoint-up('lg') {
+      flex-direction: row;
+      .nav-item {
+        margin-right: .5em;
+      }
+    }
+  }
+  .card-block {
+    padding: 1em 0;
+  }
+
+  .card-header, .card-footer {
+    background-color: #fff;
+  }
+
+  &.contractors {
+    .card-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .far {
+      font-size: 5em;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.3rem;
+        .warning {
+          color:$warning;
+        }
+        .secundary {
+          color:$secundary
+        }
+      }
+    }
+  }
+}

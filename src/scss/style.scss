@@ -1,0 +1,44 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import './bootstrap/bootstrap.scss';
+@import 'variables';
+
+body {
+  background-color:$body-bg;
+  padding-top: $height-header-itens + 10;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sidebar */
+@import 'sidebar';
+
+
+/* Header */
+@import 'header';
+
+
+/* card custom*/
+@import 'card-custom';
+
+/* badge custom*/
+@import 'badge-custom';
+
+
+
+.coluna-menor {
+  @extend .col-sm-4;
+}
+.coluna-maior {
+  @extend .col-sm-8;
+}
+
+@include media-breakpoint-up('lg') {
+  .container {
+    width: 88%;
+    margin-left: 195px;
+  }
+}

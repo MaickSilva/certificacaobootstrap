@@ -1,0 +1,14 @@
+.badge {
+  width:14px;
+  height:14px;
+  display: inline-block;
+  &.primary {
+    background-color: $primary;
+  }
+  &.secundary {
+    background-color: $secundary;
+  }
+  &.warning {
+    background-color: $warning;
+  }
+}
